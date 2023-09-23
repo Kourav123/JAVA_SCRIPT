@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<body>
+<p>Multiply every element in the array with 10:</p>
+<p id="result"></p>
+<script>
+const numbers = [10, 20, 30];
+
+const arr = numbers.map(function(num) {
+    return num * 10;
+});
+
+document.getElementById("result").innerHTML = arr;
+</script>
+</body>
+</html>

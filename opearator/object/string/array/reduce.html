@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<body>
+<h2>Reduce() Method</h2>
+<p>Calculate the sum of the rounded numbers in a given array.</p>
+<p id="result"></p>
+<script>
+const numbers = [1.6, 2.3, 5.8, 3.2];
+
+function getSum(total, num) {
+    return total + Math.round(num);
+}
+
+document.getElementById("result").innerHTML =
+    numbers.reduce(getSum, 0);
+</script>
+</body>
+</html>

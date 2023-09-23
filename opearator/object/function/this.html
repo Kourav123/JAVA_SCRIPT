@@ -1,0 +1,16 @@
+
+<!DOCTYPE html>
+<html>
+<script>
+const person = {
+    email: "example@example.com",
+    phone: "123-456-7890",
+    fullName: function () {
+        return this.email + " " + this.phone;
+    }
+};
+
+console.log(person.fullName()); // Output: example@example.com 123-456-7890
+alert(person.fullName());
+</script>
+</html>

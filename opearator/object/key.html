@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Object Description</title>
+</head>
+
+<body>
+    <script>
+        const circle = {
+            radius: 2,
+            drawPicture() {
+                console.log('drawpicture');
+            }
+        };
+
+        for (let key of Object.entries(circle)) {
+            console.log(key);
+        }
+        console.log("Factory function start");
+        let rose = {
+            firstName: 'Roselin',
+            lastName: 'Joseph',
+            getFullName() {
+                return this.firstName + ' ' +
+                    this.lastName;
+            }
+        };
+        console.log(rose.getFullName());
+
+        let o1 = {}
+o1.constructor === Object
+// true
+let o = new Object
+o.constructor === Object
+// true
+let a = []
+a.constructor === Array
+// true
+    </script>
+</body>
+
+</html>

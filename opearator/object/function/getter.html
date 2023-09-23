@@ -1,0 +1,43 @@
+
+<!DOCTYPE html>
+<html>
+<script>
+const student = {
+    // data property
+    firstName: 'Ahana',
+    // accessor property (getter)
+    get getName() {
+        return this.firstName;
+    }
+};
+
+// Accessing data property
+console.log(student.firstName); // Output: 'Ahana'
+alert(student.firstName);
+
+// Accessing the getter method
+console.log(student.getName); // Output: [Getter]
+alert(student.getName);
+// Trying to access the getter method as a function
+console.log(student.getName); // Output: 'Ahana'
+alert(student.getName);
+
+const student1 = {
+    // data property
+    firstName: 'Ahana',
+    // accessor property (setter)
+    set changeName(newName) {
+        this.firstName = newName;
+    }
+};
+
+// Accessing data property
+console.log(student1.firstName); // Output: 'Ahana'
+
+// Changing (setting) object property using a setter
+student1.changeName = 'Rose';
+alert("Change Name "+student1.firstName)
+console.log(student1.firstName); // Output: 'Rose'
+
+</script>
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<script>
+const myAge = function(birthYear) {
+    return 2023 - birthYear;
+}
+// Call the myAge function with a birth year and store the result in a variable
+const birthYear = 1990; // Replace with the desired birth year
+const age = myAge(birthYear);
+
+// Display the calculated age
+alert(`Your age is: `+age)
+console.log(`Your age is: ${age}`);
+function fun1(x, y, z) {
+    console.log(arguments[0]); // This will log the first argument, which is 1
+    console.log(arguments[1]); // This will log the second argument, which is 2
+    console.log(arguments[2]); // This will log the third argument, which is 3
+}
+
+fun1(1, 2, 3); // Call the function with arguments 1, 2, and 3
+function total(a = 6, b = 9) {
+    // Return the total
+    return a + b;
+}
+
+console.log(total(4, 7)); // 11
+console.log(total(9));    // 18
+console.log(total());     // 15
+const student = {
+    // data property
+    firstName: 'Ahana'
+};
+
+// Accessing the property
+console.log(student.firstName); // This will output 'Ahana'
+
+
+</script>
+</html>
